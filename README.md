@@ -1,6 +1,5 @@
 # Skills Extractor
 
-- [Installation](#installation)
 - [Using the Skills Extractor library](#usage)
 - [Development](#development)
 
@@ -12,32 +11,7 @@ This page contains information on how to install and use the skills extraction l
 
 ![](outputs/reports/figures/highlevel_example.png)
 
-We currently support three different taxonomies to map onto: the [European Commission’s European Skills, Competences, and Occupations (ESCO)](https://esco.ec.europa.eu/en/about-esco/what-esco), [Lightcast’s Open Skills](https://skills.lightcast.io/) and a “toy” taxonomy developed internally for the purpose of testing.
-
-If you'd like to learn more about the models used in the library, please refer to the [model card page](https://nestauk.github.io/ojd_daps_skills/build/html/model_card.html).
-
-You may also want to read more about the wider project by reading:
-
-1. Our [Introduction blog](https://www.escoe.ac.uk/the-skills-extractor-library)
-2. Our [interactive analysis blog](https://www.nesta.org.uk/data-visualisation-and-interactive/exploring-uk-skills-demand/)
-
-## Installation <a name="installation"></a>
-
-You can use pip to install the library:
-
-```
-pip install ojd-daps-skills
-```
-
-You will also need to download [spaCy's](https://spacy.io/models/en) `en_core_web_sm` model:
-
-```
-python -m spacy download en_core_web_sm
-```
-
-### AWS CLI
-
-When the package is first used it will automatically download a folder of neccessary data and models. This file is ~ 1GB. Although you don't need to have AWS credentials for this to work, you will need to download the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+It currently supports three different taxonomies to map onto: the [European Commission’s European Skills, Competences, and Occupations (ESCO)](https://esco.ec.europa.eu/en/about-esco/what-esco), [Lightcast’s Open Skills](https://skills.lightcast.io/) and a “toy” taxonomy developed internally for the purpose of testing.
 
 ## TL;DR: Using the Skills Extractor library <a name="usage"></a>
 
@@ -129,12 +103,6 @@ skills_list_matched
 >>> [{'SKILL': [('Excel skills', ('working with computers', 'S5')), ('Communication', ('use communication techniques', 'cdef')), ('working with computers', ('communication, collaboration and creativity', 'S1'))]}]
 ```
 
-## App
-
-If you would like to demo the library using a front end, we have also [built a streamlit app](https://www.nesta.org.uk/data-visualisation-and-interactive/skills-extractor-tool/) that allows you to extract skills for a given text. The app allows you to paste a job advert of your choice, extract and map skills onto any of the configurations: `extract_skills_lightcast` and `extract_skills_esco`.
-
-![nesta_esco](https://user-images.githubusercontent.com/46863334/221819442-70829216-b763-4717-b802-2f8836ad0874.gif)
-
 ## Development <a name="development"></a>
 
 If you'd like to modify or develop the source code you can clone it by first running:
@@ -177,15 +145,6 @@ Some functions have tests, these can be checked by running
 ```
 pytest
 ```
-
-### Analysis
-
-Various pieces of analysis are done in the [analysis folder](https://github.com/nestauk/ojd_daps_skills/tree/dev/ojd_daps_skills/analysis/). These require access to various datasets from the private S3 bucket and are therefore only designed for internal Nesta use.
-
-### Contributor guidelines
-
-The technical and working style guidelines can be found [here](https://github.com/nestauk/ds-cookiecutter/blob/master/GUIDELINES.md).
-
 ---
 
 <small><p>This project was made possible via funding from the <a target="_blank" href="https://www.escoe.ac.uk/">Economic Statistics Centre of Excellence</a></p></small>
