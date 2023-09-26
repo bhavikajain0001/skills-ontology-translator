@@ -1,21 +1,21 @@
 # Skills Extractor
 
-- [Using the Skills Extractor library](#usage)
+- [Using the Skills Extractor and and Translator](#usage)
 - [Development](#development)
 
-## Welcome to the Skills Extractor Library
+## Welcome to the Skills Extractor and Translator
 
-Welcome to the documentation of the skills extractor library.
+Welcome to the documentation of the skills extractor and Translator.
 
-This page contains information on how to install and use the skills extraction library. The skills library allows you to extract skills phrases from a corpus of text data and maps them onto a skills taxonomy.
+This page contains information on the use of skills extraction and translation. This allows you to extract skills phrases from a corpus of text data and map them onto a skills taxonomy.
 
 ![](outputs/reports/figures/highlevel_example.png)
 
 It currently supports three different taxonomies to map onto: the [European Commission’s European Skills, Competences, and Occupations (ESCO)](https://esco.ec.europa.eu/en/about-esco/what-esco), [Lightcast’s Open Skills](https://skills.lightcast.io/) and a “toy” taxonomy developed internally for the purpose of testing.
 
-## TL;DR: Using the Skills Extractor library <a name="usage"></a>
+## TL;DR: Using the Skills Extractor and Translator <a name="usage"></a>
 
-The library supports three key skills extraction functionalities :
+The code supports three key skills extraction functionalities :
 
 1. Extract AND map skills to a taxonomy of your choice;
 2. Extract skills from job adverts;
