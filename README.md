@@ -1,21 +1,21 @@
-# Skills Extractor
+# Skills Extractor and Taxonomy Translator
 
-- [Using the Skills Extractor and and Translator](#usage)
+- [Using the Skills Extractor and Taxonomy Translator](#usage)
 - [Development](#development)
 
-## Welcome to the Skills Extractor and Translator
+## Welcome to the Skills Extractor and Taxonomy Translator
 
-Welcome to the documentation of the skills extractor and Translator.
+Welcome to the documentation of the skills extractor and taxonomy translator.
 
-This page contains information on the use of skills extraction and translation. This allows you to extract skills phrases from a corpus of text data and map them onto a skills taxonomy.
+This page contains information on the use of skills extraction and taxonomy translation. This allows you to extract skills phrases from a corpus of text data and map them onto a skills taxonomy.
 
 ![](outputs/reports/figures/highlevel_example.png)
 
 It currently supports three different taxonomies to map onto: the [European Commission’s European Skills, Competences, and Occupations (ESCO)](https://esco.ec.europa.eu/en/about-esco/what-esco), [Lightcast’s Open Skills](https://skills.lightcast.io/) and a “toy” taxonomy developed internally for the purpose of testing.
 
-## TL;DR: Using the Skills Extractor and Translator <a name="usage"></a>
+## TL;DR: Using the Skills Extractor and Taxonomy Translator <a name="usage"></a>
 
-The code supports three key skills extraction functionalities :
+The code supports three key skills extraction and taxonomy translation functionalities :
 
 1. Extract AND map skills to a taxonomy of your choice;
 2. Extract skills from job adverts;
@@ -51,7 +51,7 @@ job_skills_matched
 
 #### 2. Extract skills
 
-You can simply extract skills from a job advert or list of job adverts:
+You can simply extract skills from a job advert or list of job adverts or course descriptions:
 
 ```
 from ojd_daps_skills.pipeline.extract_skills.extract_skills import ExtractSkills #import the module
@@ -78,7 +78,7 @@ predicted_skills
 
 #### 3. Map skills
 
-You can map either the `predicted_skills` output from `get_stills` or simply map a list of skills to a taxonomy of your choice. In this instance, we map a list of skills:
+You can map either the `predicted_skills` output from `get_stills` or simply map a list of skills to the three taxonomies that it supports. In this instance, we map a list of skills:
 
 ```
 from ojd_daps_skills.pipeline.extract_skills.extract_skills import ExtractSkills #import the module
