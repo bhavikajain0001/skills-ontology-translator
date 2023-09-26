@@ -7,7 +7,7 @@
 
 Welcome to the documentation of the skills extractor library.
 
-This page contains information on how to install and use the skills extraction library. The skills library allows you to extract skills phrases from job advertisement texts and maps them onto a skills taxonomy of your choice.
+This page contains information on how to install and use the skills extraction library. The skills library allows you to extract skills phrases from a corpus of text data and maps them onto a skills taxonomy.
 
 ![](outputs/reports/figures/highlevel_example.png)
 
