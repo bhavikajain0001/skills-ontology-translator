@@ -1,14 +1,14 @@
 # Skills Extractor
 
 - [Installation](#installation)
-- [Using Nesta's Skills Extractor library](#usage)
+- [Using the Skills Extractor library](#usage)
 - [Development](#development)
 
-## Welcome to Nesta's Skills Extractor Library
+## Welcome to the Skills Extractor Library
 
-Welcome to the documentation of Nesta's skills extractor library.
+Welcome to the documentation of the skills extractor library.
 
-This page contains information on how to install and use Nesta's skills extraction library. The skills library allows you to extract skills phrases from job advertisement texts and maps them onto a skills taxonomy of your choice.
+This page contains information on how to install and use the skills extraction library. The skills library allows you to extract skills phrases from job advertisement texts and maps them onto a skills taxonomy of your choice.
 
 ![](outputs/reports/figures/highlevel_example.png)
 
@@ -39,7 +39,7 @@ python -m spacy download en_core_web_sm
 
 When the package is first used it will automatically download a folder of neccessary data and models. This file is ~ 1GB. Although you don't need to have AWS credentials for this to work, you will need to download the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
-## TL;DR: Using Nesta's Skills Extractor library <a name="usage"></a>
+## TL;DR: Using the Skills Extractor library <a name="usage"></a>
 
 The library supports three key skills extraction functionalities :
 
@@ -47,7 +47,7 @@ The library supports three key skills extraction functionalities :
 2. Extract skills from job adverts;
 3. Map a list of skills to a taxonomy of your choice.
 
-The option `local=False` can only be used by those with access to Nesta's S3 bucket.
+The option `local=False` can only be used by those with access to the S3 bucket.
 
 #### 1. Extract AND map skills
 
@@ -180,7 +180,7 @@ pytest
 
 ### Analysis
 
-Various pieces of analysis are done in the [analysis folder](https://github.com/nestauk/ojd_daps_skills/tree/dev/ojd_daps_skills/analysis/). These require access to various datasets from Nesta's private S3 bucket and are therefore only designed for internal Nesta use.
+Various pieces of analysis are done in the [analysis folder](https://github.com/nestauk/ojd_daps_skills/tree/dev/ojd_daps_skills/analysis/). These require access to various datasets from the private S3 bucket and are therefore only designed for internal Nesta use.
 
 ### Contributor guidelines
 
@@ -190,6 +190,6 @@ The technical and working style guidelines can be found [here](https://github.co
 
 <small><p>This project was made possible via funding from the <a target="_blank" href="https://www.escoe.ac.uk/">Economic Statistics Centre of Excellence</a></p></small>
 
-<small><p>Project template is based on <a target="_blank" href="https://github.com/nestauk/ds-cookiecutter">Nesta's data science project template</a>
+<small><p>Project template is based on <a target="_blank" href="https://github.com/nestauk/ds-cookiecutter">the data science project template</a>
 (<a href="http://nestauk.github.io/ds-cookiecutter">Read the docs here</a>).
 </small>
